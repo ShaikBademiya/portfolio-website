@@ -154,4 +154,60 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set initial active nav link
     const homeLink = document.querySelector('.nav-link[href="#home"]');
     if (homeLink) homeLink.classList.add('active');
-}); 
+    
+    // Start typing animation
+    startTypingAnimation();
+});
+
+// Typing Animation
+function startTypingAnimation() {
+    const roles = [
+        "Python Backend Engineer",
+        "Data Engineer",
+        "Cloud Solutions Architect", 
+        "Backend Developer",
+        "Data Pipeline Engineer",
+        "Microservices Developer",
+        "AWS Solutions Engineer",
+        "ETL Developer"
+    ];
+    
+    const typingElement = document.getElementById('typing-text');
+    let currentRoleIndex = 0;
+    let currentCharIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 100;
+    
+    function type() {
+        const currentRole = roles[currentRoleIndex];
+        
+        if (isDeleting) {
+            // Remove characters
+            typingElement.textContent = currentRole.substring(0, currentCharIndex - 1);
+            currentCharIndex--;
+            typeSpeed = 50;
+        } else {
+            // Add characters
+            typingElement.textContent = currentRole.substring(0, currentCharIndex + 1);
+            currentCharIndex++;
+            typeSpeed = 100;
+        }
+        
+        // Check if word is complete
+        if (!isDeleting && currentCharIndex === currentRole.length) {
+            // Pause at end of word
+            typeSpeed = 2000;
+            isDeleting = true;
+        } else if (isDeleting && currentCharIndex === 0) {
+            // Move to next role
+            isDeleting = false;
+            currentRoleIndex = (currentRoleIndex + 1) % roles.length;
+            typeSpeed = 500;
+        }
+        
+        setTimeout(type, typeSpeed);
+    }
+    
+    // Start the animation
+    type();
+} 
