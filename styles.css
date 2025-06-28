@@ -74,7 +74,6 @@ section h1, article h1, aside h1, nav h1 {
 }
 
 p {
-    /* margin-bottom: 1rem; */
     color: var(--text-secondary);
 }
 
@@ -346,6 +345,7 @@ p {
     transition: all 0.3s ease;
     border: 2px solid rgba(147, 197, 253, 0.6);
     box-shadow: 0 4px 15px rgba(147, 197, 253, 0.4);
+    font-size: 1.5rem;
 }
 
 .social-link:hover {
@@ -1127,6 +1127,13 @@ section {
     color: var(--primary-color);
 }
 
+.footer-separator {
+    color: var(--text-secondary);
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
 /* Back to Top Button */
 .back-to-top {
     position: fixed;
@@ -1188,8 +1195,27 @@ section {
 }
 
 /* Mobile Responsive */
+@media (max-width: 1200px) {
+    /* Footer center alignment for medium to large screens */
+    .footer-content {
+        justify-content: center !important;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-links {
+        justify-content: center !important;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    
+    .footer-separator {
+        display: none;
+    }
+}
+
 @media (max-width: 1024px) {
-    .hero-container,
     .about-content,
     .contact-content {
         grid-template-columns: 1fr;
@@ -1245,6 +1271,10 @@ section {
         text-align: center;
     }
     
+    .hero-content {
+        padding-top: 2rem;
+    }
+    
     .hero-buttons {
         justify-content: center;
     }
@@ -1287,9 +1317,41 @@ section {
     }
     
     .hero {
-        min-height: 100vh;
-        padding: 2rem 0;
+        min-height: auto;
+        height: auto;
+        padding: 4rem 0 2rem 0;
         text-align: center;
+    }
+    
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem !important;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+    }
+    
+    .hero-description {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-avatar {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    
+    .hero-scroll {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 2rem;
     }
     
     .hero-name {
@@ -1341,15 +1403,31 @@ section {
     }
     
     .testimonial-card {
-        text-align: center;
+        text-align: left;
     }
     
     .education-timeline {
-        text-align: left; /* Keep timeline left-aligned for readability */
+        text-align: left;
     }
     
     .timeline {
-        text-align: left; /* Keep timeline left-aligned for readability */
+        text-align: left;
+    }
+    
+    .contact-info {
+        text-align: left;
+    }
+    
+    .contact-form {
+        text-align: left;
+    }
+    
+    .contact-item h4 {
+        text-align: left;
+    }
+    
+    .form-label {
+        text-align: left;
     }
     
     .footer {
