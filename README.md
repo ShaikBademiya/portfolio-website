@@ -149,8 +149,8 @@ This project is open source and available under the MIT License.
 ## 🔗 Connect
 
 - **GitHub**: [github.com/shaikbademiya](https://github.com/shaikbademiya)
-- **LinkedIn**: [linkedin.com/in/shaikbademiya](https://linkedin.com/in/shaikbademiya)
-- **Email**: bademiya@example.com
+- **LinkedIn**: [linkedin.com/in/shaik-bademiya](https://www.linkedin.com/in/shaik-bademiya-140028182/)
+- **Email**: 300bademiya@gmail.com
 
 ---
 
