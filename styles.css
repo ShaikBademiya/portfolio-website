@@ -486,7 +486,6 @@ section {
 
 /* Skills Section */
 .skills {
-    padding: 5rem 0;
     background: var(--bg-primary);
 }
 
@@ -519,7 +518,7 @@ section {
 
 .skill-items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1rem;
 }
 
@@ -553,7 +552,6 @@ section {
 
 /* Education Section */
 .education {
-    padding: 5rem 0;
     background: var(--bg-secondary);
 }
 
@@ -585,7 +583,7 @@ section {
 
 .education-dot {
     position: absolute;
-    left: 1.25rem;
+    left: 1.3rem;
     top: 0.5rem;
     width: 1.5rem;
     height: 1.5rem;
@@ -649,24 +647,6 @@ section {
 .education-details p strong {
     color: var(--text-primary);
     font-weight: 600;
-}
-
-@media (max-width: 768px) {
-    .education-timeline::before {
-        left: 1rem;
-    }
-    
-    .education-item {
-        padding-left: 3rem;
-    }
-    
-    .education-dot {
-        left: 0.25rem;
-    }
-    
-    .education-content {
-        padding: 1.5rem;
-    }
 }
 
 /* Projects Section */
@@ -835,7 +815,7 @@ section {
 
 .timeline-content {
     background: var(--bg-card);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 1rem;
     box-shadow: var(--shadow-md);
     border: 1px solid var(--border-color);
@@ -1233,7 +1213,7 @@ section {
     .timeline-item {
         width: 100%;
         left: 0 !important;
-        padding-left: 3rem !important;
+        padding-left: 1.5rem !important;
         padding-right: 0 !important;
     }
     
@@ -1248,7 +1228,7 @@ section {
     }
     
     .timeline-dot {
-        left: 10px !important;
+        left: -9px !important;
     }
 
     .about-stats {
@@ -1266,13 +1246,8 @@ section {
     .about-text,
     .skills-grid,
     .projects-grid,
-    .contact-info,
-    .contact-form {
+    .contact-info {
         text-align: center;
-    }
-    
-    .hero-content {
-        padding-top: 2rem;
     }
     
     .hero-buttons {
@@ -1285,10 +1260,6 @@ section {
     
     .about-stats {
         justify-items: center;
-    }
-    
-    .contact-items {
-        justify-content: center;
     }
     
     .contact-social {
@@ -1347,11 +1318,7 @@ section {
     }
     
     .hero-scroll {
-        position: relative;
-        bottom: auto;
-        left: auto;
-        transform: none;
-        margin-top: 2rem;
+        display: none;
     }
     
     .hero-name {
@@ -1366,6 +1333,7 @@ section {
 
     .section-title {
         font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 700;
         text-align: center;
     }
@@ -1396,6 +1364,10 @@ section {
     .project-card {
         text-align: center;
     }
+
+    .project-tech {
+        gap: 0rem;
+    }
     
     .testimonials-grid {
         grid-template-columns: 1fr;
@@ -1420,6 +1392,7 @@ section {
     
     .contact-form {
         text-align: left;
+        padding: 1.5rem;
     }
     
     .contact-item h4 {
@@ -1451,4 +1424,422 @@ section {
         display: block;
         text-align: center;
     }
+
+    /* Experience section adjustments */
+    .timeline-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .timeline-content h4 {
+        font-size: 1rem;
+    }
+
+    .timeline-content p,
+    .timeline-content li {
+        font-size: 0.8125rem;
+    }
+
+    .timeline-date {
+        font-size: 0.8125rem;
+    }
+
+    /* Project section adjustments */
+    .project-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .project-content p {
+        font-size: 0.875rem;
+    }
+
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
 } 
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.2rem;
+        width: 100%;
+    }
+
+    section {
+        padding: 2rem 0;
+        margin-bottom: 0;
+    }
+
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    /* Global heading sizes */
+    h1 { font-size: 1.875rem; }
+    h2 { font-size: 1.625rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.125rem; }
+    h5 { font-size: 1rem; }
+    h6 { font-size: 0.875rem; }
+
+    /* Hero Section */
+    .hero-title {
+        font-size: 1.625rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero-name {
+        font-size: 1.875rem;
+    }
+
+    .hero-role {
+        font-size: 1.25rem;
+    }
+
+    .hero-description {
+        font-size: 0.9375rem;
+        margin: 0.75rem 0;
+    }
+
+    /* Navigation */
+    .nav-logo a {
+        font-size: 1.125rem;
+    }
+
+    .nav-link {
+        font-size: 0.875rem;
+    }
+
+    /* Section Headers */
+    .section-title {
+        font-size: 1.625rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9375rem;
+    }
+
+    /* About Section */
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 0.875rem;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.875rem;
+    }
+
+    /* Skills Section */
+    .skill-category h3 {
+        font-size: 1.25rem;
+    }
+
+    .skill-item span {
+        font-size: 0.8125rem;
+    }
+
+    /* Education Section */
+    .education-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .education-content h4 {
+        font-size: 1rem;
+    }
+
+    .education-institution {
+        font-size: 0.875rem;
+    }
+
+    .education-details p {
+        font-size: 0.8125rem;
+    }
+
+    .education-date {
+        font-size: 0.8125rem;
+    }
+
+    /* Experience Section */
+    .timeline-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .timeline-content h4 {
+        font-size: 1rem;
+    }
+
+    .timeline-content p,
+    .timeline-content li {
+        font-size: 0.8125rem;
+    }
+
+    .timeline-date {
+        font-size: 0.8125rem;
+    }
+
+    /* Projects Section */
+    .project-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .project-content p {
+        font-size: 0.875rem;
+    }
+
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    /* Testimonials Section */
+    .testimonial-quote p {
+        font-size: 0.8125rem;
+        line-height: 1.4;
+    }
+
+    .testimonial-quote i {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .author-info h3 {
+        font-size: 0.875rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .author-info p {
+        font-size: 0.75rem;
+    }
+
+    /* Contact Section */
+    .contact-info h3 {
+        font-size: 1.125rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-info > p {
+        font-size: 0.8125rem;
+    }
+
+    .contact-item h4 {
+        font-size: 0.875rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .contact-item p {
+        font-size: 0.75rem;
+    }
+
+    .contact-item i {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Form Elements */
+    .form-label {
+        font-size: 0.8125rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.8125rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    /* Footer */
+    .footer-content p {
+        font-size: 0.875rem;
+    }
+
+    .footer-links a {
+        font-size: 0.8125rem;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.875rem;
+    }
+
+    /* Social Links */
+    .social-link span {
+        font-size: 0.8125rem;
+    }
+
+    /* Messages */
+    .form-message {
+        font-size: 0.875rem;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .education-timeline::before {
+        left: 1rem;
+    }
+    
+    .education-item {
+        padding-left: 3rem;
+    }
+    
+    .education-dot {
+        left: 0.25rem;
+        left: -0.9rem;
+    }
+    
+    .education-content {
+        padding: 1.5rem;
+    }
+
+    /* Project cards spacing */
+    .project-card {
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+
+    .project-image {
+        margin: 0;
+        padding: 0;
+    }
+
+    .project-image img {
+        border-radius: 0.5rem;
+    }
+
+    .project-content {
+        padding: 1rem;
+        padding: 1rem !important;
+    }
+
+    .projects-grid {
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+        margin: 0.25rem;
+    }
+
+    /* Skills grid spacing */
+    .skills-grid {
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .skill-category {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Education timeline spacing */
+    .education-timeline {
+        padding: 0 0.5rem;
+    }
+
+    .education-item {
+        margin-bottom: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .education-content {
+        padding: 1rem;
+    }
+
+    /* Experience timeline spacing */
+    .timeline {
+        padding: 0 0.5rem;
+    }
+
+    .timeline-item {
+        margin-bottom: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .timeline-content {
+        padding: 1rem;
+    }
+
+    /* Contact section spacing */
+    .contact-content {
+        padding: 0;
+    }
+
+    .contact-items {
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-item {
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Form spacing */
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    /* Testimonials spacing */
+    .testimonials-grid {
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .testimonial-card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* About section spacing */
+    .about-content {
+        gap: 2rem;
+        padding: 0.5rem;
+    }
+
+    .about-stats {
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    /* Hero section spacing */
+    .hero {
+        padding: 4rem 0 2rem;
+    }
+
+    .hero-content {
+        padding: 2rem 1.2rem 0;
+    }
+
+    .hero-buttons {
+        gap: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .hero-social {
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    /* Section specific containers */
+    .about-content,
+    .skills-grid,
+    .projects-grid,
+    .education-timeline,
+    .timeline,
+    .testimonials-grid,
+    .contact-content {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+}
