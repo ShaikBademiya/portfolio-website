@@ -20,822 +20,83 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Shaik Bademiya</a>
+    <!-- Initial Loading Screen -->
+    <div class="initial-loader">
+        <div class="loader-content">
+            <div id="pulse-loader" class="pulse-animation">
+                <div class="second-pulse"></div>
             </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#education" class="nav-link">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials" class="nav-link">Testimonials</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <h2>Welcome to My Portfolio</h2>
+            <!-- <p>This site is optimized for desktop viewing</p> -->
         </div>
-    </nav>
+    </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="hero-greeting">Hello, I'm</span>
-                    <span class="hero-name">Shaik Bademiya</span>
-                    <span class="hero-role">
-                        <span id="typing-text">Python Backend & Data Engineer</span>
-                        <span class="typing-cursor">|</span>
-                    </span>
-                </h1>
-                <p class="hero-description">
-                    I build scalable backend systems and transform data into actionable insights. 
-                    Passionate about cloud technologies, data pipelines, and creating efficient solutions.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="assets/Resume.pdf" class="btn btn-secondary" target="_blank">
-                        <i class="fas fa-file-pdf"></i> View Resume
-                    </a>
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home">Shaik Bademiya</a>
                 </div>
-                <div class="hero-social">
-                    <a href="https://github.com/shaikbademiya" class="social-link" target="_blank" aria-label="Visit Shaik Bademiya's GitHub profile">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/shaik-bademiya-140028182/" class="social-link" target="_blank" aria-label="Visit Shaik Bademiya's LinkedIn profile">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.hackerrank.com/profile/300bademiya" class="social-link" target="_blank" aria-label="Visit Shaik Bademiya's HackerRank profile">
-                        <i class="fab fa-hackerrank"></i>
-                    </a>
-                    <a href="mailto:300bademiya@gmail.com" class="social-link" aria-label="Send email to Shaik Bademiya">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="hero-avatar">
-                    <img src="assets/images/profile/profile.webp"
-                         alt="Shaik Bademiya - Python Backend & Data Engineer"
-                         width="400"
-                         height="400"
-                         loading="eager"
-                         srcset="assets/images/profile/profile-200.webp 200w,
-                                assets/images/profile/profile.webp 400w"
-                         sizes="(max-width: 768px) 200px,
-                                400px"
-                         onerror="this.onerror=null; this.src='assets/images/profile/profile.jpg'">
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#testimonials" class="nav-link">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
             </div>
-        </div>
-        <div class="hero-scroll">
-            <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
-    </section>
+        </nav>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Get to know more about my background and expertise</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Backend Engineer & Data Architect</h3>
-                    <p>
-                        With 3+ years of experience in backend development and data engineering, I specialize in 
-                        building robust, scalable systems that handle millions of data points daily. My expertise 
-                        spans across cloud platforms, data pipelines, and modern backend architectures.
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="hero-greeting">Hello, I'm</span>
+                        <span class="hero-name">Shaik Bademiya</span>
+                        <span class="hero-role">
+                            <span id="typing-text">Python Backend & Data Engineer</span>
+                            <span class="typing-cursor">|</span>
+                        </span>
+                    </h1>
+                    <p class="hero-description">
+                        I build scalable backend systems and transform data into actionable insights. 
+                        Passionate about cloud technologies, data pipelines, and creating efficient solutions.
                     </p>
-                    <p>
-                        I'm passionate about solving complex problems through code and turning raw data into 
-                        meaningful insights. Whether it's optimizing database performance, architecting 
-                        microservices, or building ETL pipelines, I love the challenge of creating efficient solutions.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">Projects Completed</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Technologies Mastered</span>
-                        </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="assets/Resume.pdf" class="btn btn-secondary" target="_blank">
+                            <i class="fas fa-file-pdf"></i> View Resume
+                        </a>
                     </div>
-                </div>
-                <div class="about-image">
-                    <img src="assets/images/about/about.webp"
-                         alt="Shaik Bademiya working on backend development"
-                         width="500"
-                         height="600"
-                         loading="lazy"
-                         srcset="assets/images/about/about-300.webp 300w,
-                                assets/images/about/about.webp 500w"
-                         sizes="(max-width: 768px) 300px,
-                                500px"
-                         onerror="this.onerror=null; this.src='assets/images/about/about.jpg'">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Technical Skills</h2>
-                <p class="section-subtitle">Technologies and tools I work with</p>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Backend Development</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-bolt"></i>
-                            <span>FastAPI</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-sitemap"></i>
-                            <span>Microservices</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-flask"></i>
-                            <span>Flask API</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Databases</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>SQL</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-leaf"></i>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fa-solid fa-magnifying-glass-chart"></i>
-                            <span>BigQuery</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-memory"></i>
-                            <span>Redis</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Cloud Platforms</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-aws"></i>
-                            <span>AWS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-google"></i>
-                            <span>GCP</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-cloud"></i>
-                            <span>Cloud Architecture</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-server"></i>
-                            <span>Serverless</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Data Engineering</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fas fa-exchange-alt"></i>
-                            <span>DBT</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-sync-alt"></i>
-                            <span>Fivetran</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chart-bar"></i>
-                            <span>Tableau</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-stream"></i>
-                            <span>Apache Airflow</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>DevOps & Infrastructure</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-docker"></i>
-                            <span>Docker</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-dharmachakra"></i>
-                            <span>Kubernetes</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-cogs"></i>
-                            <span>CI/CD</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-layer-group"></i>
-                            <span>Terraform</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Development Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-code"></i>
-                            <span>VS Code</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fa-brands fa-jenkins"></i>
-                            <span>Jenkins</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js-square"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>Responsive Design</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Collaboration Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-jira"></i>
-                            <span>Jira</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-slack"></i>
-                            <span>Slack</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-figma"></i>
-                            <span>Figma</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chalkboard-teacher"></i>
-                            <span>Miro</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Operating Systems</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-windows"></i>
-                            <span>Windows</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-apple"></i>
-                            <span>macOS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-linux"></i>
-                            <span>Linux</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-terminal"></i>
-                            <span>Command Line</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Education</h2>
-                <p class="section-subtitle">My academic journey and qualifications</p>
-            </div>
-            <div class="education-timeline">
-                <div class="education-item">
-                    <div class="education-dot"></div>
-                    <div class="education-content">
-                        <div class="education-date">2018 - 2022</div>
-                        <h3>Bachelor of Technology in Electronics and Communication Engineering</h3>
-                        <h4>Graduation</h4>
-                        <p class="education-institution">Lakireddy Bali Reddy College of Engineering, Mylavaram</p>
-                        <div class="education-details">
-                            <p><strong>CGPA:</strong> 8.9/10</p>
-                            <p><strong>Relevant Coursework:</strong> Embeded Syetms, VSLI, Electronics, Digital & Analog Communication, Data Structures & Algorithms, Database Management Systems, Computer Networks, Software Engineering, Machine Learning, Cloud Computing</p>
-                            <p><strong>Final Project:</strong> EEG Signal Analysis for Human Stress Monitoring by using Laboratory for Virtual Instrumentation Engineering Workbench (LabVIEW).</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="education-item">
-                    <div class="education-dot"></div>
-                    <div class="education-content">
-                        <div class="education-date">2016 - 2018</div>
-                        <h3>Intermediate Education (12th Grade)</h3>
-                        <h4>Intermediate Junior College</h4>
-                        <p class="education-institution">Hyderabad Institute of Excellence Junior College, Hyderabad</p>
-                        <div class="education-details">
-                            <p><strong>Percentage:</strong> 95.6%</p>
-                            <p><strong>Stream:</strong> Mathematics, Physics, Chemistry (MPC)</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="education-item">
-                    <div class="education-dot"></div>
-                    <div class="education-content">
-                        <div class="education-date">2008 - 2013</div>
-                        <h3>Secondary School Education (10th Grade)</h3>
-                        <h4>School</h4>
-                        <p class="education-institution">Sri Bhaskara Memorial High School, Hyderabad</p>
-                        <div class="education-details">
-                            <p><strong>CGPA:</strong> 9.8/10</p>
-                            <p><strong>Achievements:</strong> School Topper, Science Fair Winner, Sports Winners</p>
-                            <p><strong>Activities:</strong> Debate Team, Science Club, Mathematics Club</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Some of my recent work and achievements</p>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/projects/project1.webp"
-                             alt="Data Pipeline Project"
-                             width="400"
-                             height="250"
-                             loading="lazy"
-                             srcset="assets/images/projects/project1-small.webp 200w,
-                                    assets/images/projects/project1.webp 400w"
-                             sizes="(max-width: 768px) 200px,
-                                    400px"
-                             onerror="this.onerror=null; this.src='assets/images/projects/project1.jpg'">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank" aria-label="View project source code on GitHub">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="project-link" target="_blank" aria-label="View live project demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Real-time Data Pipeline</h3>
-                        <p>Built a scalable data pipeline processing 1M+ events daily using Apache Kafka, Python, and BigQuery.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Kafka</span>
-                            <span class="tech-tag">BigQuery</span>
-                            <span class="tech-tag">GCP</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/projects/project2.webp"
-                             alt="Analytics Dashboard"
-                             width="400"
-                             height="250"
-                             loading="lazy"
-                             srcset="assets/images/projects/project2-small.webp 200w,
-                                    assets/images/projects/project2.webp 400w"
-                             sizes="(max-width: 768px) 200px,
-                                    400px"
-                             onerror="this.onerror=null; this.src='assets/images/projects/project2.jpg'">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank" aria-label="View project source code on GitHub">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="project-link" target="_blank" aria-label="View live project demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Analytics Dashboard API</h3>
-                        <p>Developed a high-performance FastAPI backend serving analytics data to 10k+ daily users.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Redis</span>
-                            <span class="tech-tag">Docker</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/projects/project3.webp"
-                             alt="API Gateway"
-                             width="400"
-                             height="250"
-                             loading="lazy"
-                             srcset="assets/images/projects/project3-small.webp 200w,
-                                    assets/images/projects/project3.webp 400w"
-                             sizes="(max-width: 768px) 200px,
-                                    400px"
-                             onerror="this.onerror=null; this.src='assets/images/projects/project3.jpg'">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank" aria-label="View project source code on GitHub">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="project-link" target="_blank" aria-label="View live project demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Microservices Gateway</h3>
-                        <p>Architected a distributed API gateway handling 50k+ requests/minute with load balancing.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Kong</span>
-                            <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">AWS</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/projects/project4.webp"
-                             alt="ETL Pipeline"
-                             width="400"
-                             height="250"
-                             loading="lazy"
-                             srcset="assets/images/projects/project4-small.webp 200w,
-                                    assets/images/projects/project4.webp 400w"
-                             sizes="(max-width: 768px) 200px,
-                                    400px"
-                             onerror="this.onerror=null; this.src='assets/images/projects/project4.jpg'">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank" aria-label="View project source code on GitHub">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="project-link" target="_blank" aria-label="View live project demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>ETL Automation Platform</h3>
-                        <p>Created an automated ETL platform using Airflow and DBT, processing 500GB+ data daily.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Airflow</span>
-                            <span class="tech-tag">DBT</span>
-                            <span class="tech-tag">Snowflake</span>
-                            <span class="tech-tag">Python</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/projects/project5.webp"
-                             alt="ML Model Deployment"
-                             width="400"
-                             height="250"
-                             loading="lazy"
-                             srcset="assets/images/projects/project5-small.webp 200w,
-                                    assets/images/projects/project5.webp 400w"
-                             sizes="(max-width: 768px) 200px,
-                                    400px"
-                             onerror="this.onerror=null; this.src='assets/images/projects/project5.jpg'">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank" aria-label="View project source code on GitHub">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="project-link" target="_blank" aria-label="View live project demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>ML Model Deployment</h3>
-                        <p>Deployed machine learning models at scale using MLOps practices, serving 1M+ predictions daily.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">MLflow</span>
-                            <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">GCP</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/projects/project6.webp"
-                             alt="Cloud Monitoring"
-                             width="400"
-                             height="250"
-                             loading="lazy"
-                             srcset="assets/images/projects/project6-small.webp 200w,
-                                    assets/images/projects/project6.webp 400w"
-                             sizes="(max-width: 768px) 200px,
-                                    400px"
-                             onerror="this.onerror=null; this.src='assets/images/projects/project6.jpg'">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank" aria-label="View project source code on GitHub">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="project-link" target="_blank" aria-label="View live project demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Cloud Monitoring System</h3>
-                        <p>Built comprehensive monitoring and alerting system for cloud infrastructure using Prometheus and Grafana.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Prometheus</span>
-                            <span class="tech-tag">Grafana</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">AWS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Work Experience</h2>
-                <p class="section-subtitle">My professional journey and achievements</p>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2020 - Present</div>
-                        <h3>Data Engineer</h3>
-                        <h4>Cognizant</h4>
-                        <ul>
-                            <li>Built real-time data pipelines processing 10TB+ daily using Fivetran, Matillion, and GCP</li>
-                            <li>Designed data warehouse architecture on BigQuery</li>
-                            <li>Automated ETL workflows, reducing manual work by 90%</li>
-                            <li>Developed DBT jobs and GCP scheduled queries for clean, analytics-ready datasets</li>
-                            <li>Enabled ML model deployment through collaboration with data scientists</li>
-                            <li>Delivered high-quality datasets for Tableau dashboards and reporting</li>
-                            <li>Built an Interactive Network Graph Explorer using Python for client data analysis</li>
-                            <li>Worked in agile environment with cross-functional teams</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2022 - Present</div>
-                        <h3>Python Backend Engineer</h3>
-                        <h4>Cognizant</h4>
-                        <ul>
-                            <li>Worked as a Python Backend Engineer on an e-commerce platform, maintaining and enhancing core systems.</li>
-                            <li>Built and managed email and push notification campaigns using Python, AWS, HTML, and CSS.</li>
-                            <li>Analyzed user and transactional data from MongoDB and MySQL to enable personalized targeting.</li>
-                            <li>Integrated backend logic with campaign workflows to support data-driven marketing strategies.</li>
-                            <li>Designed and implemented a scalable Campaign Generator system using Python and AWS services.</li>
-                            <li>Led development of microservices architecture serving 1M+ users</li>
-                            <li>Optimized database queries reducing response time by 70%</li>
-                            <li>Mentored 5 junior developers and established coding standards</li>
-                            <li>Implemented CI/CD pipelines reducing deployment time by 80%</li>
-                            <li>Worked in agile environment with cross-functional teams</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2019 - 2020</div>
-                        <h3>Python Backend Developer Trainee</h3>
-                        <h4>Cognizant</h4>
-                        <ul>
-                            <li>Trained in Python, SQL, PySpark, and AWS through internal programs and Udemy courses</li>
-                            <li>Applied learned skills by completing hands-on projects during training</li>
-                            <li>Achieved AWS Solutions Architect Associate certification during the program</li>
-                            <li>Attended professional development sessions on communication and workplace skills</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">What People Say</h2>
-                <p class="section-subtitle">Feedback from colleagues and clients</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="testimonial-quote">
-                            <i class="fas fa-quote-left"></i>
-                            <p>"Bademiya is an exceptional backend engineer. His expertise in Python and cloud technologies helped us scale our platform to handle millions of users. His code quality and architectural decisions are outstanding."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="assets/images/testimonials/testimonial1.webp"
-                                 alt="John Smith"
-                                 width="60"
-                                 height="60"
-                                 loading="lazy"
-                                 onerror="this.onerror=null; this.src='assets/images/testimonials/testimonial1.jpg'"
-                                 class="author-image">
-                            <div class="author-info">
-                                <h3>John Smith</h3>
-                                <p>CTO, TechCorp Solutions</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="testimonial-quote">
-                            <i class="fas fa-quote-left"></i>
-                            <p>"Working with Bademiya on our data pipeline project was fantastic. He delivered a robust solution that processes terabytes of data efficiently. His attention to detail and problem-solving skills are remarkable."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="assets/images/testimonials/testimonial2.webp"
-                                 alt="Sarah Johnson"
-                                 width="60"
-                                 height="60"
-                                 loading="lazy"
-                                 onerror="this.onerror=null; this.src='assets/images/testimonials/testimonial2.jpg'"
-                                 class="author-image">
-                            <div class="author-info">
-                                <h3>Sarah Johnson</h3>
-                                <p>Data Science Lead, DataFlow Analytics</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="testimonial-quote">
-                            <i class="fas fa-quote-left"></i>
-                            <p>"Bademiya's microservices architecture transformed our monolithic application. The new system is more scalable, maintainable, and performs 3x better. He's a true expert in his field."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="assets/images/testimonials/testimonial3.webp"
-                                 alt="Michael Chen"
-                                 width="60"
-                                 height="60"
-                                 loading="lazy"
-                                 onerror="this.onerror=null; this.src='assets/images/testimonials/testimonial3.jpg'"
-                                 class="author-image">
-                            <div class="author-info">
-                                <h3>Michael Chen</h3>
-                                <p>Senior Developer, StartupXYZ</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's discuss your next project</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's work together</h3>
-                    <p>I'm always interested in new opportunities and exciting projects. Whether you need a backend engineer, data engineer, or technical consultant, I'd love to hear from you.</p>
-                    
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>300bademiya@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+91 9010632861</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Hyderabad, India</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-social">
+                    <div class="hero-social">
                         <a href="https://github.com/shaikbademiya" class="social-link" target="_blank" aria-label="Visit Shaik Bademiya's GitHub profile">
                             <i class="fab fa-github"></i>
                         </a>
@@ -850,60 +111,813 @@
                         </a>
                     </div>
                 </div>
-                
-                <form class="contact-form" id="contact-form" aria-label="Contact form" netlify netlify-honeypot="bot-field" method="POST" name="contact">
-                    <!-- Hidden field for spam protection -->
-                    <div style="display: none;">
-                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                <div class="hero-image">
+                    <div class="hero-avatar">
+                        <img src="assets/images/profile/profile.webp"
+                             alt="Shaik Bademiya - Python Backend & Data Engineer"
+                             width="400"
+                             height="400"
+                             loading="eager"
+                             srcset="assets/images/profile/profile-200.webp 200w,
+                                    assets/images/profile/profile.webp 400w"
+                             sizes="(max-width: 768px) 200px,
+                                    400px"
+                             onerror="this.onerror=null; this.src='assets/images/profile/profile.jpg'">
                     </div>
-                    
-                    <div class="form-group">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" id="name" name="name" required aria-label="Your full name" placeholder="Enter your full name" autocomplete="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" name="email" required aria-label="Your email address" placeholder="Enter your email address" autocomplete="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject" class="form-label">Subject</label>
-                        <input type="text" id="subject" name="subject" required aria-label="Message subject" placeholder="Enter the subject of your message" autocomplete="off">
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea id="message" name="message" rows="5" required aria-label="Your message content" placeholder="Enter your message here..." autocomplete="off"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" aria-label="Send contact message">Send Message</button>
-                    <div id="form-message" class="form-message" aria-live="polite" aria-atomic="true"></div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Shaik Bademiya. All rights reserved.</p>
-                <span class="footer-separator">|</span>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#education">Education</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#testimonials">Testimonials</a>
-                    <a href="#contact">Contact</a>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div class="hero-scroll">
+                <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="back-to-top" aria-label="Back to top of page">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Get to know more about my background and expertise</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Backend Engineer & Data Engineer</h3>
+                        <p>
+                            With 3+ years of experience in backend development and data engineering, I specialize in 
+                            building robust, scalable systems that handle millions of data points daily. My expertise 
+                            spans across cloud platforms, data pipelines, and modern backend architectures.
+                        </p>
+                        <p>
+                            I'm passionate about solving complex problems through code and turning raw data into 
+                            meaningful insights. Whether it's optimizing database performance, architecting 
+                            microservices, or building ETL pipelines, I love the challenge of creating efficient solutions.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Technologies Mastered</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="assets/images/about/about.webp"
+                             alt="Shaik Bademiya working on backend development"
+                             width="500"
+                             height="600"
+                             loading="lazy"
+                             srcset="assets/images/about/about-300.webp 300w,
+                                    assets/images/about/about.webp 500w"
+                             sizes="(max-width: 768px) 300px,
+                                    500px"
+                             onerror="this.onerror=null; this.src='assets/images/about/about.jpg'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-subtitle">Technologies and tools I work with</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Backend Development</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-bolt"></i>
+                                <span>FastAPI</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-sitemap"></i>
+                                <span>Microservices</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-flask"></i>
+                                <span>Flask API</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Databases</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>SQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-leaf"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                                <span>BigQuery</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-memory"></i>
+                                <span>Redis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Cloud Platforms</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-aws"></i>
+                                <span>AWS</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-google"></i>
+                                <span>GCP</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-cloud"></i>
+                                <span>Cloud Architecture</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-server"></i>
+                                <span>Serverless</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Data Engineering</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fas fa-exchange-alt"></i>
+                                <span>DBT</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Fivetran</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Tableau</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-stream"></i>
+                                <span>Apache Airflow</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>DevOps & Infrastructure</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-docker"></i>
+                                <span>Docker</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-dharmachakra"></i>
+                                <span>Kubernetes</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-cogs"></i>
+                                <span>CI/CD</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Terraform</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Development Tools</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code"></i>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-brands fa-jenkins"></i>
+                                <span>Jenkins</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Collaboration Tools</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-jira"></i>
+                                <span>Jira</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-slack"></i>
+                                <span>Slack</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Miro</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Operating Systems</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-windows"></i>
+                                <span>Windows</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-apple"></i>
+                                <span>macOS</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-linux"></i>
+                                <span>Linux</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-terminal"></i>
+                                <span>Command Line</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-subtitle">My academic journey and qualifications</p>
+                </div>
+                <div class="education-timeline">
+                    <div class="education-item">
+                        <div class="education-dot"></div>
+                        <div class="education-content">
+                            <div class="education-date">2018 - 2022</div>
+                            <h3>Bachelor of Technology in Electronics and Communication Engineering</h3>
+                            <h4>Graduation</h4>
+                            <p class="education-institution">Lakireddy Bali Reddy College of Engineering, Mylavaram</p>
+                            <div class="education-details">
+                                <p><strong>CGPA:</strong> 8.9/10</p>
+                                <p><strong>Relevant Coursework:</strong> Embeded Syetms, VSLI, Electronics, Digital & Analog Communication, Data Structures & Algorithms, Database Management Systems, Computer Networks, Software Engineering, Machine Learning, Cloud Computing</p>
+                                <p><strong>Final Project:</strong> EEG Signal Analysis for Human Stress Monitoring by using Laboratory for Virtual Instrumentation Engineering Workbench (LabVIEW).</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-dot"></div>
+                        <div class="education-content">
+                            <div class="education-date">2016 - 2018</div>
+                            <h3>Intermediate Education (12th Grade)</h3>
+                            <h4>Intermediate Junior College</h4>
+                            <p class="education-institution">Hyderabad Institute of Excellence Junior College, Hyderabad</p>
+                            <div class="education-details">
+                                <p><strong>Percentage:</strong> 95.6%</p>
+                                <p><strong>Stream:</strong> Mathematics, Physics, Chemistry (MPC)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-dot"></div>
+                        <div class="education-content">
+                            <div class="education-date">2008 - 2013</div>
+                            <h3>Secondary School Education (10th Grade)</h3>
+                            <h4>School</h4>
+                            <p class="education-institution">Sri Bhaskara Memorial High School, Hyderabad</p>
+                            <div class="education-details">
+                                <p><strong>CGPA:</strong> 9.8/10</p>
+                                <p><strong>Achievements:</strong> School Topper, Science Fair Winner, Sports Winners</p>
+                                <p><strong>Activities:</strong> Debate Team, Science Club, Mathematics Club</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Some of my recent work and achievements</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project1.webp"
+                                 alt="Data Pipeline Project"
+                                 width="400"
+                                 height="250"
+                                 loading="lazy"
+                                 srcset="assets/images/projects/project1-small.webp 200w,
+                                        assets/images/projects/project1.webp 400w"
+                                 sizes="(max-width: 768px) 200px,
+                                        400px"
+                                 onerror="this.onerror=null; this.src='assets/images/projects/project1.jpg'">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank" aria-label="View project source code on GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank" aria-label="View live project demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Real-time Data Pipeline</h3>
+                            <p>Built a scalable data pipeline processing 1M+ events daily using Apache Kafka, Python, and BigQuery.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Kafka</span>
+                                <span class="tech-tag">BigQuery</span>
+                                <span class="tech-tag">GCP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project2.webp"
+                                 alt="Analytics Dashboard"
+                                 width="400"
+                                 height="250"
+                                 loading="lazy"
+                                 srcset="assets/images/projects/project2-small.webp 200w,
+                                        assets/images/projects/project2.webp 400w"
+                                 sizes="(max-width: 768px) 200px,
+                                        400px"
+                                 onerror="this.onerror=null; this.src='assets/images/projects/project2.jpg'">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank" aria-label="View project source code on GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank" aria-label="View live project demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Analytics Dashboard API</h3>
+                            <p>Developed a high-performance FastAPI backend serving analytics data to 10k+ daily users.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project3.webp"
+                                 alt="API Gateway"
+                                 width="400"
+                                 height="250"
+                                 loading="lazy"
+                                 srcset="assets/images/projects/project3-small.webp 200w,
+                                        assets/images/projects/project3.webp 400w"
+                                 sizes="(max-width: 768px) 200px,
+                                        400px"
+                                 onerror="this.onerror=null; this.src='assets/images/projects/project3.jpg'">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank" aria-label="View project source code on GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank" aria-label="View live project demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Microservices Gateway</h3>
+                            <p>Architected a distributed API gateway handling 50k+ requests/minute with load balancing.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Kong</span>
+                                <span class="tech-tag">Kubernetes</span>
+                                <span class="tech-tag">AWS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project4.webp"
+                                 alt="ETL Pipeline"
+                                 width="400"
+                                 height="250"
+                                 loading="lazy"
+                                 srcset="assets/images/projects/project4-small.webp 200w,
+                                        assets/images/projects/project4.webp 400w"
+                                 sizes="(max-width: 768px) 200px,
+                                        400px"
+                                 onerror="this.onerror=null; this.src='assets/images/projects/project4.jpg'">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank" aria-label="View project source code on GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank" aria-label="View live project demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>ETL Automation Platform</h3>
+                            <p>Created an automated ETL platform using Airflow and DBT, processing 500GB+ data daily.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Airflow</span>
+                                <span class="tech-tag">DBT</span>
+                                <span class="tech-tag">Snowflake</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project5.webp"
+                                 alt="ML Model Deployment"
+                                 width="400"
+                                 height="250"
+                                 loading="lazy"
+                                 srcset="assets/images/projects/project5-small.webp 200w,
+                                        assets/images/projects/project5.webp 400w"
+                                 sizes="(max-width: 768px) 200px,
+                                        400px"
+                                 onerror="this.onerror=null; this.src='assets/images/projects/project5.jpg'">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank" aria-label="View project source code on GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank" aria-label="View live project demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>ML Model Deployment</h3>
+                            <p>Deployed machine learning models at scale using MLOps practices, serving 1M+ predictions daily.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">MLflow</span>
+                                <span class="tech-tag">Kubernetes</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">GCP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/projects/project6.webp"
+                                 alt="Cloud Monitoring"
+                                 width="400"
+                                 height="250"
+                                 loading="lazy"
+                                 srcset="assets/images/projects/project6-small.webp 200w,
+                                        assets/images/projects/project6.webp 400w"
+                                 sizes="(max-width: 768px) 200px,
+                                        400px"
+                                 onerror="this.onerror=null; this.src='assets/images/projects/project6.jpg'">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank" aria-label="View project source code on GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank" aria-label="View live project demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Cloud Monitoring System</h3>
+                            <p>Built comprehensive monitoring and alerting system for cloud infrastructure using Prometheus and Grafana.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Prometheus</span>
+                                <span class="tech-tag">Grafana</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-subtitle">My professional journey and achievements</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022 - Present</div>
+                            <h3>Data Engineer</h3>
+                            <h4>Cognizant</h4>
+                            <ul>
+                                <li>Built real-time data pipelines processing 10TB+ daily using Fivetran, Matillion, and GCP</li>
+                                <li>Designed data warehouse architecture on BigQuery</li>
+                                <li>Automated ETL workflows, reducing manual work by 90%</li>
+                                <li>Developed DBT jobs and GCP scheduled queries for clean, analytics-ready datasets</li>
+                                <li>Enabled ML model deployment through collaboration with data scientists</li>
+                                <li>Delivered high-quality datasets for Tableau dashboards and reporting</li>
+                                <li>Built an Interactive Network Graph Explorer using Python for client data analysis</li>
+                                <li>Worked in agile environment with cross-functional teams</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2020 - 2022</div>
+                            <h3>Python Backend Engineer</h3>
+                            <h4>Cognizant</h4>
+                            <ul>
+                                <li>Worked as a Python Backend Engineer on an e-commerce platform, maintaining and enhancing core systems.</li>
+                                <li>Built and managed email and push notification campaigns using Python, AWS, HTML, and CSS.</li>
+                                <li>Analyzed user and transactional data from MongoDB and MySQL to enable personalized targeting.</li>
+                                <li>Integrated backend logic with campaign workflows to support data-driven marketing strategies.</li>
+                                <li>Designed and implemented a scalable Campaign Generator system using Python and AWS services.</li>
+                                <li>Led development of microservices architecture serving 1M+ users</li>
+                                <li>Optimized database queries reducing response time by 70%</li>
+                                <li>Mentored 5 junior developers and established coding standards</li>
+                                <li>Implemented CI/CD pipelines reducing deployment time by 80%</li>
+                                <li>Worked in agile environment with cross-functional teams</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2019 - 2020</div>
+                            <h3>Python Backend Developer Trainee</h3>
+                            <h4>Cognizant</h4>
+                            <ul>
+                                <li>Trained in Python, SQL, PySpark, and AWS through internal programs and Udemy courses</li>
+                                <li>Applied learned skills by completing hands-on projects during training</li>
+                                <li>Achieved AWS Solutions Architect Associate certification during the program</li>
+                                <li>Attended professional development sessions on communication and workplace skills</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">What People Say</h2>
+                    <p class="section-subtitle">Feedback from colleagues and clients</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"Bademiya is an exceptional backend engineer. His expertise in Python and cloud technologies helped us scale our platform to handle millions of users. His code quality and architectural decisions are outstanding."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="assets/images/testimonials/testimonial1.webp"
+                                     alt="John Smith"
+                                     width="60"
+                                     height="60"
+                                     loading="lazy"
+                                     onerror="this.onerror=null; this.src='assets/images/testimonials/testimonial1.jpg'"
+                                     class="author-image">
+                                <div class="author-info">
+                                    <h3>John Smith</h3>
+                                    <p>CTO, TechCorp Solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"Working with Bademiya on our data pipeline project was fantastic. He delivered a robust solution that processes terabytes of data efficiently. His attention to detail and problem-solving skills are remarkable."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="assets/images/testimonials/testimonial2.webp"
+                                     alt="Sarah Johnson"
+                                     width="60"
+                                     height="60"
+                                     loading="lazy"
+                                     onerror="this.onerror=null; this.src='assets/images/testimonials/testimonial2.jpg'"
+                                     class="author-image">
+                                <div class="author-info">
+                                    <h3>Sarah Johnson</h3>
+                                    <p>Data Science Lead, DataFlow Analytics</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"Bademiya's microservices architecture transformed our monolithic application. The new system is more scalable, maintainable, and performs 3x better. He's a true expert in his field."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="assets/images/testimonials/testimonial3.webp"
+                                     alt="Michael Chen"
+                                     width="60"
+                                     height="60"
+                                     loading="lazy"
+                                     onerror="this.onerror=null; this.src='assets/images/testimonials/testimonial3.jpg'"
+                                     class="author-image">
+                                <div class="author-info">
+                                    <h3>Michael Chen</h3>
+                                    <p>Senior Developer, StartupXYZ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's discuss your next project</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's work together</h3>
+                        <p>I'm always interested in new opportunities and exciting projects. Whether you need a backend engineer, data engineer, or technical consultant, I'd love to hear from you.</p>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>300bademiya@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+91 9010632861</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Hyderabad, India</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <a href="https://github.com/shaikbademiya" class="social-link" target="_blank" aria-label="Visit Shaik Bademiya's GitHub profile">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/shaik-bademiya-140028182/" class="social-link" target="_blank" aria-label="Visit Shaik Bademiya's LinkedIn profile">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.hackerrank.com/profile/300bademiya" class="social-link" target="_blank" aria-label="Visit Shaik Bademiya's HackerRank profile">
+                                <i class="fab fa-hackerrank"></i>
+                            </a>
+                            <a href="mailto:300bademiya@gmail.com" class="social-link" aria-label="Send email to Shaik Bademiya">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form" aria-label="Contact form" netlify netlify-honeypot="bot-field" method="POST" name="contact">
+                        <!-- Hidden field for spam protection -->
+                        <div style="display: none;">
+                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" required aria-label="Your full name" placeholder="Enter your full name" autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" required aria-label="Your email address" placeholder="Enter your email address" autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" required aria-label="Message subject" placeholder="Enter the subject of your message" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" rows="5" required aria-label="Your message content" placeholder="Enter your message here..." autocomplete="off"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" aria-label="Send contact message">Send Message</button>
+                        <div id="form-message" class="form-message" aria-live="polite" aria-atomic="true"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p>&copy; 2025 Shaik Bademiya. All rights reserved.</p>
+                    <span class="footer-separator">|</span>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#education">Education</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#testimonials">Testimonials</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top of page">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
