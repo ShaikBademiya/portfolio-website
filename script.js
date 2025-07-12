@@ -1,3 +1,51 @@
+// Initial Loading Screen
+document.addEventListener('DOMContentLoaded', () => {
+    const initialLoader = document.querySelector('.initial-loader');
+    const mainContent = document.querySelector('.main-content');
+    
+    if (initialLoader && mainContent) {
+        // Show loader and hide main content initially
+        initialLoader.style.display = 'flex';
+        mainContent.style.display = 'none';
+        
+        // Handle page load complete
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                // Fade out loader
+                initialLoader.style.opacity = '0';
+                initialLoader.style.transition = 'opacity 0.5s ease';
+                
+                // Show main content
+                setTimeout(() => {
+                    initialLoader.style.display = 'none';
+                    mainContent.style.display = 'block';
+                    mainContent.style.opacity = '1';
+                    
+                    // Initialize other features
+                    initializeWebsite();
+                }, 500);
+            }, 1500);
+        });
+    } else {
+        console.warn('Loading screen elements not found:', {
+            loader: !!initialLoader,
+            content: !!mainContent
+        });
+        // Initialize anyway in case elements aren't found
+        initializeWebsite();
+    }
+});
+
+// Main website initialization
+function initializeWebsite() {
+    // Set initial active nav link
+    const homeLink = document.querySelector('.nav-link[href="#home"]');
+    if (homeLink) homeLink.classList.add('active');
+    
+    // Start typing animation
+    startTypingAnimation();
+}
+
 // DOM Elements
 const navbar = document.getElementById('navbar');
 const navMenu = document.getElementById('nav-menu');
@@ -147,16 +195,6 @@ window.addEventListener('scroll', () => {
             statsAnimated = true;
         }
     }
-});
-
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', () => {
-    // Set initial active nav link
-    const homeLink = document.querySelector('.nav-link[href="#home"]');
-    if (homeLink) homeLink.classList.add('active');
-    
-    // Start typing animation
-    startTypingAnimation();
 });
 
 // Typing Animation
